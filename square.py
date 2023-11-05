@@ -1,3 +1,4 @@
+import unittest
 
 def area(a):
     '''
@@ -8,6 +9,10 @@ def area(a):
         
             Возвращаемое значение:
                 a * a (float): площадь квадрата
+
+            Примеры работы:
+                area(2.0) = 4.0
+                area(0.5) = 0.25
     '''
     return a * a
 
@@ -21,5 +26,9 @@ def perimeter(a):
         
             Возвращаемое значение:
                 4 * a (float): периметр квадрата
+
+            Примеры работы:
+                perimeter(1.0) = 4
+                perimeter(0.5) = 2
     '''
     return 4 * a

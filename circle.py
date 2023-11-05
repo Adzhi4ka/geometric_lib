@@ -1,5 +1,5 @@
 import math
-
+import unittest
 
 def area(r):
     '''
@@ -10,6 +10,10 @@ def area(r):
         
         Возвращаемое значение:
             math.pi * r * r (float): площадь круга
+
+        Примеры использования:
+            area(1.0) = 3.14159256
+            area(0.5) = 0.78539816
     '''
     return math.pi * r * r
 
@@ -23,6 +27,9 @@ def perimeter(r):
         
         Возвращаемое значение:
             2 * math.pi * r (float): периметр круга
+
+        Примеры использования:
+            perimeter(1.0) = 6.28318531
+            perimeter(0.5) = 3.14159256
     '''
     return 2 * math.pi * r
-
