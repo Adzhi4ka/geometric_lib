@@ -1,0 +1,59 @@
+name: "Test CI"
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  ububntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Test circle
+        run:
+          python -m unittest circle.py
+          
+      - name: Test rectangle
+        run:
+          python -m unittest rectangle.py
+          
+      - name: Test square
+        run:
+          python -m unittest square.py
+          
+      - name: Test triangle
+        run:
+          python -m unittest triangle.py
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Test circle
+        run:
+          python -m unittest circle.py
+          
+      - name: Test rectangle
+        run:
+          python -m unittest rectangle.py
+          
+      - name: Test square
+        run:
+          python -m unittest square.py
+          
+      - name: Test triangle
+        run:
+          python -m unittest triangle.py
+        
+    
